@@ -3,7 +3,7 @@
 <head> 
     <meta charset="UTF-8"> 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <title>Employee Leave Request Portal & HR Leave Management</title> 
+    <title>ATS Employee Leave Request Portal & HR Leave Management</title> 
     <style> 
         * { 
             box-sizing: border-box; 
@@ -49,7 +49,7 @@
         } 
  
         .tab-button.active { 
-            color: #4CAF50; 
+            color: #11d6cf; 
             font-weight: bold; 
         } 
  
@@ -60,7 +60,7 @@
             left: 0; 
             width: 100%; 
             height: 2px; 
-            background-color: #4CAF50; 
+            background-color: #1dd2bf; 
         } 
  
         .tab-content { 
@@ -141,7 +141,7 @@
         .delete-btn { 
             background-color: #d32f2f; 
         } 
-        .status-pending { color: #ff9800; } 
+        .status-pending { color: #e8cb28; } 
         .status-approved { color: #4CAF50; } 
         .status-rejected { color: #f44336; } 
  
@@ -191,7 +191,7 @@
  
     <div class="container"> 
         <!-- Employee Leave Request Portal Section --> 
-        <h1>Employee Leave Request Portal</h1> 
+        <h1>ATS Employee Leave Request Portal</h1> 
         <div class="tabs"> 
             <button class="tab-button active" onclick="openTab(event, 
 'requestTab')">New Request</button> 
@@ -214,7 +214,11 @@ valid Employee ID (3 uppercase letters followed by 0 and 3 digits)</div>
                     <select id="leaveType" required> 
                         <option value="annual">Annual Leave</option> 
                         <option value="sick">Sick Leave</option> 
-                        <option value="personal">Personal Leave</option> 
+                        <option value="personal">Personal Leave</option>
+                        <option value="unpaid">Unpaid Leave</option>
+                        <option value="maternity">Maternity Leave</option>
+                        <option value="paternity">Paternity Leave</option>
+                        <option value="compassionate">Compassionate Leave</option> 
                     </select> 
                 </div> 
                 <div class="form-group"> 
@@ -245,7 +249,7 @@ be earlier than start date.</div>
  
     <!-- HR Leave Management Portal Section --> 
     <div class="container"> 
-        <h2>HR Leave Management Portal</h2> 
+        <h2>ATS HR Leave Management Portal</h2> 
  
         <!-- Tabs Navigation --> 
         <div class="tabs"> 
